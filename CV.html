@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+<body>
+
+    <div class="resume">
+        <div class="resume_left">
+            <div class="resume_profile">
+                <img src="./pic.jpg" alt="pic">
+            </div>
+            <div class="resume_content">
+                <div class="resume_item resume_info">
+                    <div class="title">
+                        <p class="bold">Israr ul haq</p>
+                        <p class="regular">Designer</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-map-signs"></i>
+                            </div>
+                            <div class="data">
+                                abdullah garden, shahkot <br /> Pakistan
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="data">
+                                +923076858034
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="data">
+                                israrulhaq796@gmail.com
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-weebly"></i>
+                            </div>
+                            <div class="data">
+                                www.foreverliving.com
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_skills">
+                    <div class="title">
+                        <p class="bold">skill's</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="skill_name">
+                                HTML
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 80%;"></span>
+                            </div>
+                            <div class="skill_per">80%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                CSS
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                            <div class="skill_per">70%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                SASS
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                            <div class="skill_per">90%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                JS
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                            <div class="skill_per">60%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                JQUERY
+                            </div>
+                            <div class="skill_progress">
+                                <span style="width: 88%;"></span>
+                            </div>
+                            <div class="skill_per">88%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_social">
+                    <div class="title">
+                        <p class="bold">Social</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Facebook</p>
+                                <p>israr ul haq Rajpoot @facebook</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-twitter-square"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Twitter</p>
+                                <p>Israr @twitter</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Youtube</p>
+                                <p>flow_with_israr@youtube</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="data">
+                                <p class="semi-bold">Linkedin</p>
+                                <p>israrulhaq@linkedin</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="resume_right">
+            <div class="resume_item resume_about">
+                <div class="title">
+                    <p class="bold">About </p>
+                </div>
+                <p>Am a goal oriented self prepared person wanna do some thing for me and my nation looking farward to
+                    be expert in Ai </p>
+            </div>
+            <div class="resume_item resume_work">
+                <div class="title">
+                    <p class="bold" id="work-title">Work Experience <button class="btn lead" data-bs-toggle="modal" data-bs-target="#addprojectModal"><i
+                            class="fa-solid fa-circle-plus"></i></button></p>
+                </div>
+                <ul id="work-list">
+                    <li>
+                        <div class="date">2016 - 2018</div>
+                        <div class="info">
+                            <p class="semi-bold">Kips academy</p>
+                            <p>i have worked as a instructer for metriculation level Computer Science Students </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2018 - 2019</div>
+                        <div class="info">
+                            <p class="semi-bold">Free lancing</p>
+                            <p>have 1 year experience of java and html programing tasking experiece </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2019 - Present</div>
+                        <div class="info">
+                            <p class="semi-bold">Student</p>
+                            <p>Studying Computer Science under grade level from Comsats university Lahore</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_education">
+                <div class="title">
+                    <p class="bold">Education</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="date">2017 - 2019 </div>
+                        <div class="info">
+                            <p class="semi-bold">Engneering (Kips college fsd)</p>
+                            <p>Studeied PRE Engg from Kips college fsd </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2019-present</div>
+                        <div class="info">
+                            <p class="semi-bold">Comsats University Lahore</p>
+                            <p>Studying Computer Science under grade level from Comsats university Lahore</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume_item resume_hobby">
+                <div class="title">
+                    <p class="bold">Hobby</p>
+                </div>
+                <ul>
+                    <li><i class="fas fa-book"></i></li>
+                    <li><i class="fas fa-gamepad"></i></li>
+                    <li><i class="fas fa-music"></i></li>
+                    <li><i class="fab fa-pagelines"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addprojectModal" tabindex="-1" aria-labelledby="addprojectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addprojectModalLabel">Add Work History</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="project-name" class="col-form-label">From:</label>
+                            <input type="text" class="form-control" id="project-from" required placeholder="year">
+                        </div>
+                        <div class="mb-2">
+                            <label for="project-name" class="col-form-label">To:</label>
+                            <input type="text" class="form-control" id="project-to" required placeholder="year">
+                        </div>
+                        <div class="mb-2">
+                            <label for="project-color" class="col-form-label">Institution:</label>
+                            <input type="text" class="form-control" id="project-institution" required></input>
+                        </div>
+                        <div class="mb-2">
+                            <label for="project-description" class="col-form-label">Description:</label>
+                            <textarea class="form-control" id="project-description" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info" id="add-project">Add Project</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>
